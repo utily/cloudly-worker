@@ -1,12 +1,12 @@
 {
-	"name": "@utily/library-template",
-	"version": "0.0.10",
-	"description": "Template library for Typescript.",
-	"author": "Utily Contributors",
+	"name": "cloudly-worker",
+	"version": "0.0.0",
+	"description": "Library to simplify usage of Cloudflare Workers.",
+	"author": "Simon Mika",
 	"license": "MIT",
-	"repository": "https://github.com/utily/library-template",
+	"repository": "https://github.com/utily/cloudly-worker",
 	"bugs": {
-		"url": "https://github.com/utily/library-template/issues"
+		"url": "https://github.com/utily/cloudly-worker/issues"
 	},
 	"homepage": "https://github.com/utily",
 	"private": false,
@@ -56,10 +56,11 @@
 		"clean": "rimraf dist node_modules coverage"
 	},
 	"devDependencies": {
-		"@types/jest": "^28.1.3",
-		"@typescript-eslint/eslint-plugin": "5.30.0",
-		"@typescript-eslint/parser": "5.30.0",
-		"eslint": "^8.18.0",
+		"@cloudflare/workers-types": "^3.4.0",
+		"@types/jest": "^28.1.4",
+		"@typescript-eslint/eslint-plugin": "5.30.5",
+		"@typescript-eslint/parser": "5.30.5",
+		"eslint": "^8.19.0",
 		"eslint-plugin-prettierx": "github:utily/eslint-plugin-prettierx#utily-20220323",
 		"eslint-plugin-simple-import-sort": "^7.0.0",
 		"jest": "^28.1.2",
@@ -68,5 +69,11 @@
 		"ts-jest": "^28.0.5",
 		"typescript": "^4.7.4",
 		"watch": "^0.13.0"
+	},
+	"dependencies": {
+		"cloudly-http": "^0.0.50",
+		"cryptly": "^2.1.0",
+		"gracely": "^2.0.2",
+		"isoly": "^0.0.47"
 	}
 }

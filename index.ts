@@ -1,1 +1,2 @@
-export const a = 42
+export * as DurableObject from "./DurableObject"
+export { KeyValueStore } from "./KeyValueStore"
